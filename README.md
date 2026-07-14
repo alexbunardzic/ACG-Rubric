@@ -26,7 +26,7 @@ If a criterion is wrong, [challenge it](.github/ISSUE_TEMPLATE/challenge-criteri
 
 The authors of this rubric assessed their own codebase against it, publicly, unedited, and published where they failed:
 
-**→ [Session 001 — Self-Assessment of ACG (Detent)](evidence/sessions/001-self-assessment-detent.md)**
+**→ [Session 001 — Self-Assessment of ACG (to be added)](evidence/sessions/001-self-assessment-detent.md)**
 
 A standard whose authors are exempt from it is a marketing asset. This one is not. The rules in [`badge/expiry-and-revocation.md`](badge/expiry-and-revocation.md) apply to the founders on the same terms as any other holder — see the first section of that file.
 
