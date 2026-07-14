@@ -10,7 +10,7 @@ It does not assess the model, the code, or the security posture. It asks whether
 
 Your engineers are shipping code produced with AI assistance. When something breaks in production, you need to answer: *what was the AI told to build, who accepted its output, and how do we know it does what it was supposed to do?* If the honest answer is "let me check the chat history if it hasn't expired" — you have a practice problem, not a model problem.
 
-The ACG Rubric assesses the practice, produces a badge if it passes, and takes the badge away if it stops passing. See **[services →](https://acg-rubric.example.org/services)** _(link to be provided)_ for engagement details.
+The ACG Rubric assesses the practice, produces a badge if it passes, and takes the badge away if it stops passing. See **[services →](https://aicraftspeopleguild.github.io/acg-services.html)** for engagement details.
 
 ## For a practitioner — is this any good?
 
