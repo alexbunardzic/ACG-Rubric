@@ -1,0 +1,23 @@
+# CODEOWNERS for the ACG Rubric
+#
+# Every PR requires review from the owners of the paths it touches.
+# The list below is intentionally minimal; add owners as the project grows.
+
+# Repository-wide default
+*                               @acg-rubric/maintainers
+
+# Rubric substance — additional review required
+/rubric/                        @acg-rubric/maintainers @acg-rubric/rubric-editors
+/rubric/thresholds.md           @acg-rubric/maintainers
+/rubric/criteria/               @acg-rubric/rubric-editors
+
+# Badge and governance — highest sensitivity
+/badge/expiry-and-revocation.md @acg-rubric/maintainers
+/badge/register.md              @acg-rubric/maintainers
+/GOVERNANCE.md                  @acg-rubric/maintainers
+
+# Mappings — cross-framework knowledge
+/mappings/                      @acg-rubric/mapping-owners
+
+# Evidence — sanitization gate
+/evidence/                      @acg-rubric/evidence-reviewers
