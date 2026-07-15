@@ -59,7 +59,7 @@ A `partial` on a required criterion is a fail for badge purposes. It is recorded
 
 ## Organization
 
-**Required set** — every criterion in the rubric with `status: active` or `status: draft` must pass.
+**Required set** — every criterion with `status: active` must pass. Criteria with `status: draft` are excluded from the required set by design: a draft criterion is one the maintainers have told the world is not finished, and it must not have binding force on a badge until it is promoted to `active` through the governance process. Adding a criterion in `draft` status therefore does not silently change what any Organization badge requires.
 
 **Disqualifying set** — all Product disqualifiers, plus:
 

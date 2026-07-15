@@ -32,7 +32,7 @@ Attaches to a **named product or codebase**. Term: 12 months, or immediately on 
 
 Attaches to a **legal entity**. Term: 24 months, with interim attestation at 12.
 
-**Required**: every criterion in the rubric must pass.
+**Required**: every criterion with `status: active` must pass. Draft criteria are excluded — see [`../rubric/thresholds.md`](../rubric/thresholds.md).
 
 **Disqualifiers**: Product disqualifiers, plus EVOLVE-03, plus any criterion that fails at Product level in more than one assessed product within the organization.
 
