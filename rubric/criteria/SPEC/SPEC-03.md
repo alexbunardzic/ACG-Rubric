@@ -10,25 +10,38 @@ since: v0.1
 
 ## Criterion
 
-The artefacts that define correct behaviour — tests, specifications, and prose constraints — cannot be silently altered by an agent, and any alteration is detectable.
+When an agent [materially contributes](../../glossary.md#material-contribution) to a change that touches a protected artefact — a test, a specification, or a prose constraint — the change is **detected AND blocked from shipping absent explicit review by a human who did not operate the agent.**
+
+Detection alone is not sufficient. A change that could ship without a human being made to look at it fails this criterion, regardless of whether some downstream report would eventually surface it.
+
+The commit boundary is not the unit of assessment. The gate must fire whether the protected artefact and the implementation appear in the same commit, in separate commits on the same branch, on different branches later merged, or in any other arrangement by which the change reaches the codebase.
 
 ## Why it matters
 
-An agent that can modify the specification can satisfy it trivially. A failing test rewritten by the agent that was supposed to make it pass is not a passing test; it is a passing signal disconnected from the property it was meant to prove. See [../../../evidence/findings/003-silent-test-weakening.md](../../../evidence/findings/003-silent-test-weakening.md) — the incident that produced this criterion.
+An agent that can modify the specification can satisfy it trivially. A failing test rewritten by the agent that was supposed to make it pass is not a passing test; it is a passing signal disconnected from the property it was meant to prove.
+
+Detection without a shipping gate is what the Detent incident proves is insufficient. The change was, in principle, visible in the diff — nobody was made to look. See [../../../evidence/findings/003-silent-test-weakening.md](../../../evidence/findings/003-silent-test-weakening.md).
 
 ## How it's assessed
 
-- Inspect commit history for agent-authored changes to test files, specifications, and constraint documents.
-- Confirm a mechanism exists that flags such changes — a review gate, a lint rule, a diff-detecting hook.
-- Confirm the mechanism was exercised in practice, not merely configured.
+- Identify the set of protected artefacts (tests, specifications, constraint documents). The team is expected to be able to enumerate them.
+- Confirm a mechanism is configured such that it **must** fire on any agent-authored change to any protected artefact, regardless of commit or branch topology.
+- Confirm the mechanism **blocks merge** until a review is recorded by a human who did not operate the agent that produced the change.
+- Where the history contains agent-authored changes to protected artefacts, confirm the log shows the mechanism fired and a qualifying review was recorded for each. Where no such change exists in history, the criterion passes on the strength of the configuration alone — the mechanism's absence of firing is not evidence of failure. A clean history is a pass, not an ambiguity.
 
 ## Meets
 
-A repository where changes to files under `tests/` produced in the same commit as agent-authored implementation code trigger an automatic reviewer assignment to a human who did not operate the agent, and the review log shows this has happened.
+A repository whose merge gate is configured such that any pull request touching files under `tests/`, `spec/`, or files marked as constraint documents — from any commit, on any branch — cannot merge until a reviewer who is not the operator of the agent that produced the change has recorded an approval. The rule is enforced by the gate itself, not by convention. Where agent-authored changes to those files exist in history, the log shows a qualifying review was recorded on each.
 
 ## Does not meet
 
-A repository where an agent's task included "make the tests pass" and the diff shows a test's assertion was weakened in the same commit as the implementation change, with no reviewer having flagged it. The agent satisfied its instruction; the specification surface was not protected.
+Three failure patterns, all observed:
+
+1. **Detection without a gate.** A nightly job produces a diff report of agent-authored changes to test files. The report goes to a shared inbox. No mechanism prevents the change from merging before anyone reads the report. The change is detectable; it is not protected.
+
+2. **Same-commit-only detection.** A hook flags changes to test files only when they appear in the same commit as implementation changes. The agent — or a team member gaming the gate — commits the test change separately from the implementation. The hook does not fire. The specification surface was modified without triggering the mechanism the criterion requires. This is a fail whether or not the split was deliberate.
+
+3. **Configured but bypassable.** The mechanism exists and would fire, but the workflow allows the operator of the agent to self-approve their own agent's changes to protected artefacts. Independence of the reviewing human is defeated by workflow, even though a review appears in the log.
 
 ## Scope note
 
