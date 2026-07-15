@@ -20,7 +20,10 @@ Current core set (all `core: true`):
 - `VER-01`
 - `AGENT-01`
 - `HUMAN-01`, `HUMAN-02`
-- `PROV-01`
+
+**PROV-01 is intentionally not in the core set in v0.1.** It is the criterion the core set most obviously needs, but it is `status: draft` — its Meets and Does not meet examples are pending an incident-derived anchor (see the criterion file for the reasoning). A labelled-draft criterion cannot carry binding force on a badge decision without undercutting the credibility of every other criterion in the set. PROV-01's promotion to `core: true` follows the process in [`../GOVERNANCE.md`](../GOVERNANCE.md) and is expected in a future version.
+
+The dependency is not lost: [SPEC-03](criteria/SPEC/SPEC-03.md) references the [agent-authored change](glossary.md#agent-authored-change) definition, which in turn describes PROV-01's practice. A team pursuing a Practitioner badge under v0.1 will already need PROV-01's mechanism in order to pass SPEC-03; PROV-01 is not binding on its own until anchored.
 
 Changes to the core set — flipping a criterion's `core` flag — are amendments to the rubric and follow the process in `GOVERNANCE.md`. The core set is not adjusted per engagement.
 
@@ -41,7 +44,8 @@ A `partial` on a required criterion is a fail for badge purposes. It is recorded
 
 - `HUMAN-01` (a named accountable human exists)
 - `SPEC-03` (specification surface is protected against agent modification)
-- `PROV-01` (provenance is reconstructable)
+
+`PROV-01` will join this list on promotion to `core: true`; see the core-set note above.
 
 ## Product
 

@@ -14,11 +14,12 @@ Attaches to a **named individual**. Term: 12 months.
 - VER-01
 - AGENT-01
 - HUMAN-01, HUMAN-02
-- PROV-01
 
 **Disqualifiers** (any fail disqualifies):
 
-- HUMAN-01, SPEC-03, PROV-01
+- HUMAN-01, SPEC-03
+
+PROV-01 is `status: draft` in v0.1 and therefore not in the core set or the disqualifier list. See [`../rubric/thresholds.md`](../rubric/thresholds.md) for the reasoning; it will join both on promotion.
 
 ## Product
 

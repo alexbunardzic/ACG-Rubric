@@ -10,7 +10,9 @@ since: v0.1
 
 ## Criterion
 
-When an agent [materially contributes](../../glossary.md#material-contribution) to a change that touches a protected artefact — a test, a specification, or a prose constraint — the change is **detected AND blocked from shipping absent explicit review by a human who did not operate the agent.**
+When an [agent-authored change](../../glossary.md#agent-authored-change) touches a protected artefact — a test, a specification, or a prose constraint — the change is **detected AND blocked from shipping absent explicit review by a human who did not operate the agent.**
+
+("Agent-authored" is defined in the glossary and entails that the attribution is grounded in recorded evidence, not inference. The operational check that the recording exists is [PROV-01](../PROV/PROV-01.md); SPEC-03 depends on the practice PROV-01 describes regardless of PROV-01's own binding status in the current rubric version.)
 
 Detection alone is not sufficient. A change that could ship without a human being made to look at it fails this criterion, regardless of whether some downstream report would eventually surface it.
 

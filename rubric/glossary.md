@@ -39,9 +39,24 @@ An agent's contribution to a change is **material** if any of the following is t
 - the agent chose the structure, name, or interface of anything that persists past the change;
 - the change would not have been produced, or would have been substantially different, without the agent.
 
-"Trivial" is not defined numerically on purpose. An assessor uses judgement; the team must be able to defend theirs.
+"Trivial" is not defined numerically on purpose — bright-line byte counts are arbitrary across languages, formatters, and contexts. Instead, the discipline is that **the team must publish a written policy declaring which agent contributions they treat as material for the purposes of this rubric.** The assessor evaluates the team against its own declared policy.
+
+- A team with no declared policy fails on that ground alone — the criteria that reference "material contribution" are unassessable against them until the policy exists.
+- A team whose policy treats no agent contribution as material has published its position; the assessor is entitled to challenge the policy, but the assessor is not making a per-change judgement call.
+- Two assessors applying the same declared policy to the same repository should scope the sample identically. Divergence is a defect in the policy, not in the assessors.
 
 Note that "material change" (above) and "material contribution" (here) are distinct terms. A material contribution is about an agent's role in a single change; a material change is about the practice as a whole. Do not conflate them.
+
+## agent-authored change
+
+A change is **agent-authored** if two things are true:
+
+1. An agent made a [material contribution](#material-contribution) to it, per the team's declared policy; and
+2. The fact of the agent's contribution is grounded in **recorded evidence** — not in operator memory, not in inference from code style, not in "we always use the assistant for this kind of change."
+
+The operational check that the recorded evidence exists — that a team can, on demand, tell an assessor which shipped changes are agent-authored under this definition — is [PROV-01](criteria/PROV/PROV-01.md). Other criteria (notably [SPEC-03](criteria/SPEC/SPEC-03.md)) rely on this definition to identify their scope, and therefore rely on the practice implied by PROV-01 whether or not PROV-01 itself is a binding criterion in the current rubric version.
+
+A change that was, in fact, produced with agent assistance but for which no recorded evidence exists is not, for the purposes of the rubric, agent-authored — the practice has already broken the chain, and criteria that require the chain will fail on the ground that there is nothing to check. This is intentional: the rubric will not let a team unaware of its own agent use claim compliance by asserting the changes were all human.
 
 ## provenance
 
