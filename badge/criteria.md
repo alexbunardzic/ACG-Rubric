@@ -22,7 +22,7 @@ Attaches to a **named individual**. Term: 12 months.
 
 ## Product
 
-Attaches to a **named product or codebase**. Term: 12 months, or immediately on material change to the practice.
+Attaches to a **named product or codebase**. Term: 12 months, or immediately on [material change](../rubric/glossary.md#material-change) to the practice.
 
 **Required**: the core set, plus VER-02, VER-03, AGENT-02, AGENT-03, EVOLVE-01, EVOLVE-02, PROV-02.
 

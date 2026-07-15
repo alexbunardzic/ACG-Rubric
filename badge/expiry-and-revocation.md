@@ -15,28 +15,29 @@ There is no permanent badge. All three levels — Practitioner, Product, Organiz
 | Badge | Term | Renewal |
 | --- | --- | --- |
 | Practitioner | 12 months | Full reassessment |
-| Product | 12 months | Full reassessment, or on any material change to the practice |
+| Product | 12 months | Full reassessment, or on any [material change](../rubric/glossary.md#material-change) to the practice |
 | Organization | 24 months | Full reassessment, with an interim attestation at 12 months |
 
 A badge past its expiry date is **not valid**. It is not "grace period" valid, not "renewal pending" valid. If the register in [`register.md`](register.md) shows an expired badge, it is displayed as expired.
 
 ## Material change triggers renewal
 
-A Product badge lapses immediately on any of the following, regardless of how much time is left on the term:
+"[Material change](../rubric/glossary.md#material-change)" is defined in the glossary; the glossary is authoritative. In operational terms, a Product badge lapses immediately on any of the following, regardless of how much time is left on the term:
 
 - The team changes the primary AI coding tool or agent framework.
 - The team changes the accountable human without transferring the practice in a documented way.
-- The verification chain (test infrastructure, review workflow, or merge gates) is materially altered.
-- The specification workflow is materially altered.
+- The verification chain (test infrastructure, review workflow, or merge gates) is [materially altered](../rubric/glossary.md#material-change).
+- The specification workflow is [materially altered](../rubric/glossary.md#material-change).
+- The enumeration of agent permissions (see [AGENT-02](../rubric/criteria/AGENT/AGENT-02.md)) is [materially altered](../rubric/glossary.md#material-change).
 
-"Material" is judged against the description of the practice recorded in the last assessment. The team is expected to declare material changes; failure to declare is grounds for revocation, not merely lapse.
+The team is expected to declare material changes at the time they occur, not at renewal; failure to declare is grounds for revocation, not merely lapse. Disagreements about whether a change was material are settled per the procedure in the glossary entry.
 
 ## Revocation
 
 A badge can be revoked before its expiry date. Grounds for revocation:
 
 1. **Discovery that the practice does not match what was assessed.** If evidence emerges — from an incident, a whistleblower, a subsequent assessment — that the practice differed materially from what the assessor was shown, the badge is revoked.
-2. **Failure to declare a material change.** See above.
+2. **Failure to declare a [material change](../rubric/glossary.md#material-change).** See above.
 3. **Undisclosed conflict of interest in the original assessment.** If it emerges that the assessor had a conflict that was not disclosed, all badges issued under that engagement are reviewed.
 4. **Assessor misconduct.** If the assessor is found to have issued a badge without conducting the assessment as described in [`../assessment/method.md`](../assessment/method.md), affected badges are revoked and the assessment redone.
 

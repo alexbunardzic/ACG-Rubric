@@ -14,6 +14,23 @@ A durable, addressable file or record. A chat transcript in a proprietary UI is 
 
 The gap between what the specification says and what the code does. Drift is not a bug; drift is the *unmeasured possibility* of a bug. A team that can measure drift and chooses to accept it has not drifted. A team that cannot measure it has, by definition.
 
+## material change
+
+A change to the [practice](#practice) is **material** if it alters any of the elements recorded in the description of the practice at the time of the last assessment. Concretely, at minimum:
+
+- the primary AI coding tool or agent framework in use;
+- the identity of the [accountable human](#accountable-human) for a scope of work;
+- the verification chain — test infrastructure, review workflow, or merge gates (see [VER-01](criteria/VER/VER-01.md), [VER-03](criteria/VER/VER-03.md));
+- the specification workflow — where specifications live, how they are versioned, how they are protected (see [SPEC-01](criteria/SPEC/SPEC-01.md), [SPEC-02](criteria/SPEC/SPEC-02.md), [SPEC-03](criteria/SPEC/SPEC-03.md));
+- the enumeration of agent permissions (see [AGENT-02](criteria/AGENT/AGENT-02.md));
+- the review or accountability workflow (see [HUMAN-01](criteria/HUMAN/HUMAN-01.md), [HUMAN-02](criteria/HUMAN/HUMAN-02.md)).
+
+A change to the codebase itself is not a material change to the practice unless it also alters one of the above.
+
+**Who decides.** The team is expected to declare material changes at the time they occur, not at renewal. If the team and an assessor disagree about whether a change was material, the disagreement is settled against the recorded description of the practice at the time of the last assessment: a change that touches any element of that description is material; a change that does not, is not.
+
+**Consequences.** A material change to the practice triggers renewal of any Product badge attached to that practice (see [`../badge/expiry-and-revocation.md`](../badge/expiry-and-revocation.md)). Failure to declare a material change is grounds for revocation, not merely lapse.
+
 ## material contribution
 
 An agent's contribution to a change is **material** if any of the following is true:
@@ -23,6 +40,8 @@ An agent's contribution to a change is **material** if any of the following is t
 - the change would not have been produced, or would have been substantially different, without the agent.
 
 "Trivial" is not defined numerically on purpose. An assessor uses judgement; the team must be able to defend theirs.
+
+Note that "material change" (above) and "material contribution" (here) are distinct terms. A material contribution is about an agent's role in a single change; a material change is about the practice as a whole. Do not conflate them.
 
 ## provenance
 

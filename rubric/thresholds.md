@@ -7,7 +7,7 @@ Thresholds are published so that they cannot be negotiated during an assessment.
 | Badge | Attaches to | Renews |
 | --- | --- | --- |
 | **Practitioner** | A named individual | Every 12 months |
-| **Product** | A named product or codebase | Every 12 months, or on any material change to the practice |
+| **Product** | A named product or codebase | Every 12 months, or on any [material change](glossary.md#material-change) to the practice |
 | **Organization** | A legal entity | Every 24 months, with an interim attestation at 12 |
 
 ## The core set
