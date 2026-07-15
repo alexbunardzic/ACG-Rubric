@@ -40,7 +40,7 @@ A change the team cannot produce evidence for is a **fail** on any criterion tha
 Criteria fall into two categories for sample aggregation:
 
 - **Binary-per-change** (e.g. [PROV-01](../rubric/criteria/PROV/PROV-01.md), [PROV-03](../rubric/criteria/PROV/PROV-03.md), [HUMAN-01](../rubric/criteria/HUMAN/HUMAN-01.md)) — any single failure in the sample fails the criterion. There is no percentage-passing threshold; the sample is not averaged.
-- **Policy-and-configuration** (e.g. [AGENT-02](../rubric/criteria/AGENT/AGENT-02.md), [VER-03](../rubric/criteria/VER/VER-03.md), [SPEC-03](../rubric/criteria/SPEC/SPEC-03.md)) — the criterion is assessed on the team's declared policy and merge-gate configuration. The sample is a **spot-check** that the policy is applied; sample failures on these criteria escalate to a review of the policy and configuration rather than a straight fail.
+- **Policy-and-configuration** (e.g. [AGENT-02](../rubric/criteria/AGENT/AGENT-02.md), [VER-02](../rubric/criteria/VER/VER-02.md), [VER-03](../rubric/criteria/VER/VER-03.md), [SPEC-03](../rubric/criteria/SPEC/SPEC-03.md)) — the criterion is assessed on the team's declared policy and merge-gate configuration. The sample is a **spot-check** that the policy is applied; sample failures on these criteria escalate to a review of the policy and configuration rather than a straight fail.
 
 Each criterion's `How it's assessed` section states which category it falls into.
 
