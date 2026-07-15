@@ -24,6 +24,10 @@ None of the established frameworks describe this failure. None require the prote
 
 Each entry links to (a) the criterion in the rubric and (b) the evidence in [`../evidence/findings/`](../evidence/findings/) that justifies its existence.
 
+### [PROV-01](../rubric/criteria/PROV/PROV-01.md) — Agent authorship is attributable from recorded evidence
+
+The substrate question: *can you identify which of your changes were produced with AI assistance, from a durable record rather than from someone's memory?* No established framework asks this. OWASP and NIST assume the AI-produced artefact is identifiable; the ACG Rubric makes that identifiability a first-class, testable property, because without it every other criterion collapses into "we had none" as the trivial pass.
+
 ### [SPEC-01](../rubric/criteria/SPEC/SPEC-01.md) — A specification exists as a durable artefact
 
 No established framework requires that AI-produced code be traceable to a durable specification. OWASP addresses prompt injection and model output handling; NIST addresses organizational context and risk registers. Neither requires the artefact-level durability the ACG Rubric requires.

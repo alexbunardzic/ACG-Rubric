@@ -6,6 +6,10 @@ It does not assess the model, the code, or the security posture. It asks whether
 
 ---
 
+> ⚠ **v0.1 does not issue badges.** This version of the rubric is a **specification**, not a certification. Several core criteria are `status: draft` with placeholder Meets / Does not meet examples pending evidence sessions to anchor them. The launch is the [Self-Assessment Session](evidence/sessions/001-self-assessment-detent.md) — where the authors apply the rubric to their own codebase in public, unedited — not a badge issuance. Badges begin issuing from a rubric version in which every criterion required for any badge level is `status: active` and every example is grounded in evidence. This is deliberate: see [`rubric/thresholds.md`](rubric/thresholds.md#v01--no-badges-issue).
+
+---
+
 ## For a CTO — what this is and why you should care
 
 Your engineers are shipping code produced with AI assistance. When something breaks in production, you need to answer: *what was the AI told to build, who accepted its output, and how do we know it does what it was supposed to do?* If the honest answer is "let me check the chat history if it hasn't expired" — you have a practice problem, not a model problem.

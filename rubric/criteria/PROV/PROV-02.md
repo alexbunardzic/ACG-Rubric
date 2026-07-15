@@ -29,6 +29,10 @@ _TBD._
 
 _TBD._
 
+## Scope note
+
+This criterion presumes a provenance record exists per change; the criterion that establishes the record's existence and reliability is [PROV-01](PROV-01.md). A team that fails PROV-01 cannot pass PROV-02 — there is no record to inspect for model and version.
+
 ## Mappings
 
 - OWASP LLM Top 10: partial — LLM03 Supply Chain.

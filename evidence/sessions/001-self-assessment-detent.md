@@ -40,13 +40,14 @@ This session is the launch. It is intentionally the first thing published, becau
 | AGENT-01 | Agent identity known per action | | |
 | AGENT-02 | Agent permissions are bounded and enumerable | | |
 | AGENT-03 | Destructive actions require human confirmation | | |
-| HUMAN-01 | Named accountable human exists | | |
+| HUMAN-01 | Named accountable human exists and is answerable | | Includes the answerability interview step. |
 | HUMAN-02 | Accountable human reviewed before merge | | |
 | EVOLVE-01 | Practice is documented | | |
 | EVOLVE-02 | Artefact changeable by someone not in the room | | |
 | EVOLVE-03 | Practice survives departure of any single person | | |
-| PROV-01 | Provenance reconstructable | | |
+| PROV-01 | Agent authorship is attributable from recorded evidence | | Substrate. Active/core in v0.1. |
 | PROV-02 | Provenance includes model and version | | |
+| PROV-03 | Full provenance chain is reconstructable | | Draft/non-core; a "why did this ship?" from this session could anchor it. |
 
 ## Disagreements
 

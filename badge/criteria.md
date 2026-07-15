@@ -1,8 +1,10 @@
 # What earns each badge
 
-Operational companion to [`../rubric/thresholds.md`](../rubric/thresholds.md). If the two disagree, thresholds.md is authoritative.
+Operational companion to [`../rubric/thresholds.md`](../rubric/thresholds.md). If the two disagree, `thresholds.md` is authoritative.
 
-The Practitioner threshold is defined mechanically: **all criteria with `core: true` in the frontmatter must pass.** Higher tiers add explicit required sets on top of that.
+## v0.1 — No badges issue
+
+**No badges issue against v0.1.** The rubric is a specification, not a certification, in this version. See [`../rubric/thresholds.md`](../rubric/thresholds.md#v01--no-badges-issue) for the reasoning. The tables below describe what would earn a badge under a mature rubric version; they do not describe an assessment that can be performed for issuance today.
 
 ## Practitioner
 
@@ -14,18 +16,17 @@ Attaches to a **named individual**. Term: 12 months.
 - VER-01
 - AGENT-01
 - HUMAN-01, HUMAN-02
+- PROV-01 (attribution substrate)
 
 **Disqualifiers** (any fail disqualifies):
 
-- HUMAN-01, SPEC-03
-
-PROV-01 is `status: draft` in v0.1 and therefore not in the core set or the disqualifier list. See [`../rubric/thresholds.md`](../rubric/thresholds.md) for the reasoning; it will join both on promotion.
+- HUMAN-01, SPEC-03, PROV-01
 
 ## Product
 
 Attaches to a **named product or codebase**. Term: 12 months, or immediately on [material change](../rubric/glossary.md#material-change) to the practice.
 
-**Required**: the core set, plus VER-02, VER-03, AGENT-02, AGENT-03, EVOLVE-01, EVOLVE-02, PROV-02.
+**Required**: the core set, plus VER-02, VER-03, AGENT-02, AGENT-03, EVOLVE-01, EVOLVE-02, PROV-02, PROV-03.
 
 **Disqualifiers**: Practitioner disqualifiers, plus AGENT-02 and VER-02.
 
