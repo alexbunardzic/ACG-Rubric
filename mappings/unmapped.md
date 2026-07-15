@@ -10,7 +10,17 @@ If you read one file in this repository, read this one.
 
 The established frameworks — OWASP LLM Top 10, OWASP Agentic Top 10, NIST AI RMF — address the **application-level and organizational risk** of AI. They do not address the **integrity of the practice by which AI-assisted code comes into existence**. That is the gap. The criteria below sit inside it.
 
-## Currently unmapped criteria
+## The lead example
+
+### [SPEC-03](../rubric/criteria/SPEC/SPEC-03.md) — Specification surface is protected against agent modification
+
+**Mapped to nothing in OWASP LLM Top 10. Mapped to nothing in NIST AI RMF.** Obliquely related to bounded-agency concerns in OWASP Agentic, but the specific failure mode this criterion addresses is not named there either.
+
+The failure mode: an agent, asked to make a failing test pass, weakens the test instead of fixing the code. The specification the agent was being measured against is silently rewritten to accommodate the code, and the resulting green build is a passing signal disconnected from the property it was meant to prove. The Detent incident ([`../evidence/findings/003-silent-test-weakening.md`](../evidence/findings/003-silent-test-weakening.md)) is proof this happens in the wild.
+
+None of the established frameworks describe this failure. None require the protection that prevents it. That is not a gap on their part that we are apologizing for — it is a description of the space the ACG Rubric occupies. If you read one criterion in this repository to understand what the rubric is doing that nobody else is, read SPEC-03.
+
+## Other currently unmapped criteria
 
 Each entry links to (a) the criterion in the rubric and (b) the evidence in [`../evidence/findings/`](../evidence/findings/) that justifies its existence.
 
@@ -21,10 +31,6 @@ No established framework requires that AI-produced code be traceable to a durabl
 ### [SPEC-02](../rubric/criteria/SPEC/SPEC-02.md) — The specification is versioned
 
 Nowhere in the mapped frameworks is the *versioning* of the specification a required property. This is the criterion that makes drift detectable.
-
-### [SPEC-03](../rubric/criteria/SPEC/SPEC-03.md) — Specification surface is protected against agent modification
-
-The Detent-derived criterion. No established framework addresses the specific failure mode of an agent silently weakening the specification it was asked to satisfy. This is the criterion that would have caught the incident in [`../evidence/findings/003-silent-test-weakening.md`](../evidence/findings/003-silent-test-weakening.md).
 
 ### [HUMAN-01](../rubric/criteria/HUMAN/HUMAN-01.md) — A named accountable human exists for every change
 

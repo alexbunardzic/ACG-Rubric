@@ -49,6 +49,8 @@ This criterion does not evaluate whether the specification is *correct*, only wh
 
 ## Mappings
 
-- OWASP LLM Top 10: none
-- OWASP Agentic Top 10: partial — related to bounded agent action; see [mappings/owasp-agentic-top10.md](../../../mappings/owasp-agentic-top10.md).
-- NIST AI RMF: none
+- **OWASP LLM Top 10: none.** This failure mode — an agent silently modifying the artefact it is being measured against — is not named anywhere in OWASP LLM. See [`unmapped.md`](../../../mappings/unmapped.md), where SPEC-03 is the lead example of what the ACG Rubric addresses that existing frameworks do not.
+- **OWASP Agentic Top 10: partial.** Obliquely related to bounded agent action, but the specific failure of an agent modifying its own oracle is not named. See [`mappings/owasp-agentic-top10.md`](../../../mappings/owasp-agentic-top10.md).
+- **NIST AI RMF: none.** This failure mode is not addressed. See [`unmapped.md`](../../../mappings/unmapped.md).
+
+The two "none" entries above are not a hole in the mapping — they are the point of the criterion. SPEC-03 exists because the failure it prevents is one that no established framework has yet written down, and the Detent incident is proof it happens in the wild.
